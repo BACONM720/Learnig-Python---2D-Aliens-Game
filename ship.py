@@ -10,7 +10,6 @@ class Ship:
         self.settings = ai_game.settings
         self.screen_rect = ai_game.screen.get_rect()
 
-
         # load the ship image and get its rect
         self.image = pygame.image.load('images/ship.bmp')
         self.rect = self.image.get_rect()
@@ -22,10 +21,6 @@ class Ship:
 
         self.moving_right = False
         self.moving_left = False
-
-
-
-
 
     def blitme(self):
         """draw the ship at its curr location"""
